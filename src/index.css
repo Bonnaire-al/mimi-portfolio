@@ -1,0 +1,18 @@
+h1, h2, h3, .navbar-link.active, .navbar-link:hover, .navbar-mobile-title {
+  font-family: "Rubik Dirt", serif;
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(90deg,  
+  #550000 0%,  
+  #771111 20%,  
+  #993333 30%,  
+  #BB5555 60%,  
+  #DD7777 70%,  
+  #FFFFFF 95%);
+-webkit-background-clip: text; 
+background-clip: text;
+color: transparent;
+}
+body {
+  background-color:rgb(10, 10, 10);
+}

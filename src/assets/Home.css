@@ -1,0 +1,139 @@
+.carousel {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%; /* Si tu veux un peu d'espace en bas, ajuste cette valeur */
+  }
+/* Applique un fond à chaque slide */
+.carousel-item {
+    position: relative;
+    background-size: cover;  /* L'image prend toute la taille de la slide */
+    background-position: center; /* L'image est centrée */
+    min-height: 30rem; /* Hauteur minimum de la slide, ajuste selon ton besoin */
+    
+  }
+  
+  /* Conteneur du contenu à l'intérieur du carrousel (titre et texte) */
+  .carousel-item-background {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments (titre et texte) en colonne */
+    align-items: center; /* Centre horizontalement le contenu */
+    height: 100%; /* Remplie toute la hauteur de la slide */
+    text-align: center; /* Centre le texte */
+    color: #fbfbfc; /* Couleur du texte (ajustable selon ton design) */
+    margin-top: 12%;
+    font-size: 1rem;
+   
+  }
+  
+  /* Image de fond pour chaque slide */
+  .carousel-item {
+    background-image: url(../assets/ciel.webp);
+  }
+  
+  .carousel-item:nth-child(2) {
+    background-image: url('../assets/ciel2.webp'); 
+  }
+  
+  .carousel-item:nth-child(3) {
+    background-image: url('../assets/ciel3.webp'); 
+  }
+  
+  /* Optionnel : Style des indicateurs */
+  .carousel-indicators button {
+    background-color: #800000; /* Rouge bordeaux pour les boutons des indicateurs */
+  }
+  
+  .carousel-indicators .active {
+    background-color: #550000; /* Rouge bordeaux plus foncé pour le bouton actif */
+  }
+  
+
+/* Style du titre avec dégradé de couleur */
+.title1 {
+  font-size: 4.5rem;
+   -webkit-background-clip: text;  /* Pour Safari */
+  background-clip: text;         /* Pour les autres navigateurs */
+  animation: slide-in-elliptic-top-fwd 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+            transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
+
+.title2{
+  font-size: 3rem;
+  margin-top: -5rem;
+}
+
+.title3{
+  font-size: 3rem;
+  margin-top: -6rem;
+}
+
+.apropos{
+  background-color: aliceblue;
+  height: 100%;
+  width: 70%;
+    margin-left: 15%;
+    margin-right: 15%; 
+    
+}
+.prp{
+ padding-left: 5%;
+ background: linear-gradient(90deg,  
+ #550000 0%,  
+ #771111 20%,  
+ #993333 30%,  
+ #BB5555 60%,  
+ #DD7777 70%,  
+ #FFFFFF 95%);
+  
+  
+}
+.pdm{
+  border-left: solid 5px #550000;
+  padding-top: 2.5%;
+  padding-left: 5%;
+}
+ 
+img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover; 
+  margin-top: 10%;
+}
+.progress {
+  height: 10px;
+  width: 80%; /* Hauteur de la barre elle-même */
+  border-radius: 5px; /* Rayon d'angle arrondi (optionnel) */
+}
+
+@media (max-width: 576px) {
+  h2 ,h3 {
+    font-size: 1.5rem !important;
+  }
+  h1{
+    font-size: 3rem !important;
+   }
+  p {
+    font-size: 0.8rem !important;
+  }
+  .carousel-item {
+    padding-top: 20%;
+    height: 300%;
+  }
+}
