@@ -27,15 +27,15 @@
   
   /* Image de fond pour chaque slide */
   .carousel-item {
-    background-image: url(../assets/ciel.webp);
+    background-image: url(./images/ciel.webp);
   }
   
   .carousel-item:nth-child(2) {
-    background-image: url('../assets/ciel2.webp'); 
+    background-image: url('./images/ciel2.webp'); 
   }
   
   .carousel-item:nth-child(3) {
-    background-image: url('../assets/ciel3.webp'); 
+    background-image: url('./images/ciel3.webp'); 
   }
   
   /* Optionnel : Style des indicateurs */
