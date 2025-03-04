@@ -3,8 +3,6 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import '../assets/Home.css';
 import { ProgressBar, Carousel } from 'react-bootstrap';
 
-
-
 const Accueil: React.FC = () => {
   return (
     <div className="container-fluid p-0 home">
@@ -45,12 +43,12 @@ const Accueil: React.FC = () => {
       </section>
 
       {/* Section 2 : À propos */}
-      <section  className="apropos">
-        <div className="container">
+      <section className="apropos">
+        <div className="container1">
           <div className="row">
             {/* Image à gauche */}
-            <div  className="col-md-6 prp">
-              <img src="/public/profile.webp" alt="profile pic" className="img-fluid rounded" />
+            <div className="col-md-6 prp">
+              <img src="/src/assets/images/profile.webp" alt="profile pic" className="img-fluid rounded" />
             </div>
 
             {/* Texte à droite */}
@@ -69,7 +67,7 @@ const Accueil: React.FC = () => {
               ].map(({ skill, value }, index) => (
                 <div key={index} className="mb-3">
                   <label>{skill}</label>
-                  <ProgressBar now={value} label={`${value}%`} aria-label={`${skill} Progress`} />
+                  <ProgressBar animated now={value} variant="danger" label={`${value}%`} aria-label={`${skill} Progress`} />
                 </div>
               ))}
             </div>

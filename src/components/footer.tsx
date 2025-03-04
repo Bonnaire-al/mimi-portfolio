@@ -9,13 +9,13 @@ const Footer: React.FC = () => {
         {/* Section des icônes */}
         <div className="social-icons">
           <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-            <img src="/public/linkedin.png" alt="LinkedIn" />
+            <img src="/src/assets/images/linkedin.png" alt="LinkedIn" />
           </a>
           <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer">
-            <img src="/public/whatsapp.png" alt="WhatsApp" />
+            <img src="/src/assets/images/whatsapp.png" alt="WhatsApp" />
           </a>
           <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-            <img src="/public/instagram.png" alt="Instagram" />
+            <img src="/src/assets/images/instagram.png" alt="Instagram" />
           </a>
         </div>
 

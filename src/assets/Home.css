@@ -94,19 +94,12 @@
 }
 .prp{
  padding-left: 5%;
- background: linear-gradient(90deg,  
- #550000 0%,  
- #771111 20%,  
- #993333 30%,  
- #BB5555 60%,  
- #DD7777 70%,  
- #FFFFFF 95%);
-  
-  
+ background: white;
+    
 }
+
 .pdm{
-  border-left: solid 5px #550000;
-  padding-top: 2.5%;
+    padding-top: 2.5%;
   padding-left: 5%;
 }
  
@@ -120,6 +113,23 @@ img {
   height: 10px;
   width: 80%; /* Hauteur de la barre elle-même */
   border-radius: 5px; /* Rayon d'angle arrondi (optionnel) */
+  color: #000000;
+}
+
+.container1{
+  padding: 5%;
+  background: linear-gradient(90deg,  
+  #000000 0%,  
+  #550000 10%,  
+  #771111 20%,  
+  #993333 30%,  
+  #BB5555 40%,  
+  #DD7777 50%,  
+  #FFFFFF 65%);  
+}
+
+.progress-c{
+  background-color: #550000 !important;
 }
 
 @media (max-width: 576px) {
@@ -136,4 +146,5 @@ img {
     padding-top: 20%;
     height: 300%;
   }
+  
 }
