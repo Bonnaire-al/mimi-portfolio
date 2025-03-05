@@ -48,7 +48,7 @@ const Accueil: React.FC = () => {
           <div className="row">
             {/* Image à gauche */}
             <div className="col-md-6 prp">
-              <img src="/src/assets/images/profile.webp" alt="profile pic" className="img-fluid rounded" />
+              <img src="/images/profile.webp" alt="profile pic" className="img-fluid rounded" />
             </div>
 
             {/* Texte à droite */}
