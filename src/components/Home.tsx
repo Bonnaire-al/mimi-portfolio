@@ -8,7 +8,7 @@ const Accueil: React.FC = () => {
     <div className="container-fluid p-0 home">
       {/* Section 1 : Présentation avec carrousel automatique */}
       <section id="presentation">
-        <Carousel fade indicators={true} controls={true} interval={3000} pause="hover">
+        <Carousel fade indicators={true} controls={true} interval={7000} pause="hover">
           {/* Slide 1 */}
           <Carousel.Item>
             <div className="carousel-item-background">

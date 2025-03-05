@@ -8,7 +8,7 @@
     position: relative;
     background-size: cover;  /* L'image prend toute la taille de la slide */
     background-position: center; /* L'image est centrée */
-    min-height: 30rem; /* Hauteur minimum de la slide, ajuste selon ton besoin */
+    height: 30rem; /* Hauteur minimum de la slide, ajuste selon ton besoin */
     
   }
   
@@ -134,17 +134,22 @@ img {
 
 @media (max-width: 576px) {
   h2 ,h3 {
-    font-size: 1.5rem !important;
+    font-size: 1rem !important;
   }
   h1{
-    font-size: 3rem !important;
+    font-size: 1.5rem !important;
    }
   p {
-    font-size: 0.8rem !important;
+    font-size: 0.7rem !important;
   }
   .carousel-item {
-    padding-top: 20%;
-    height: 300%;
+    padding-top: 10%;
+    height: 18rem;
+    
   }
-  
+ .carousel{
+    width:100% ;
+    margin-left: 0;
+/* Si tu veux un peu d'espace en bas, ajuste cette valeur */
+  }
 }
