@@ -143,7 +143,7 @@ img {
     font-size: 0.7rem !important;
   }
   .carousel-item {
-    padding-top: 10%;
+    padding-top: 13%;
     height: 18rem;
     
   }
@@ -151,5 +151,68 @@ img {
     width:100% ;
     margin-left: 0;
 /* Si tu veux un peu d'espace en bas, ajuste cette valeur */
+  }
+  .pdm{
+    background-color: #ffffff;
+  }
+  .home{
+    background: linear-gradient(90deg,  
+    #000000 0%,  
+    #550000 10%,  
+    #771111 20%,  
+    #993333 30%,  
+    #BB5555 40%,  
+    #DD7777 50%,  
+    #FFFFFF 65%);
+  }
+  .small-progress {
+    height: 5px; /* Ajuste la hauteur selon ton besoin */
+    font-size: 7px; 
+    margin-bottom: 5px;/* Réduit la taille du texte à l'intérieur */
+  }
+  .small-text {
+    font-size: 10px; /* Réduit la taille du texte */
+    margin-bottom: -2px; /* Réduit l’espace sous le texte */
+    display: block; /* Force le texte à être sur sa propre ligne */
+  }
+
+}
+
+@media (min-width: 576px) and (max-width: 768px)  {
+
+  h2 ,h3 {
+    font-size: 1.3rem !important;
+  }
+  h1{
+    font-size: 1.8rem !important;
+   }
+  p {
+    font-size: 0.6rem !important;
+  }
+  .carousel-item {
+    padding-top: 7%;
+    height: 18rem;
+    
+  }
+ .carousel{
+    width:100% ;
+    margin-left: 0;
+/* Si tu veux un peu d'espace en bas, ajuste cette valeur */
+  }
+  .small-progress {
+    height: 5px; /* Ajuste la hauteur selon ton besoin */
+    font-size: 7px; 
+    margin-bottom: 5px;/* Réduit la taille du texte à l'intérieur */
+  }
+  .small-text {
+    font-size: 10px; /* Réduit la taille du texte */
+    margin-bottom: -2px; /* Réduit l’espace sous le texte */
+    display: block; /* Force le texte à être sur sa propre ligne */
+  }
+  img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover; 
+    margin-top: 40%;
   }
 }

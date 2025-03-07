@@ -8,7 +8,7 @@ const Accueil: React.FC = () => {
     <div className="container-fluid p-0 home">
       {/* Section 1 : Présentation avec carrousel automatique */}
       <section id="presentation">
-        <Carousel fade indicators={true} controls={true} interval={7000} pause="hover">
+        <Carousel fade indicators={true} controls={true} interval={6000} pause="hover">
           {/* Slide 1 */}
           <Carousel.Item>
             <div className="carousel-item-background">
@@ -47,27 +47,27 @@ const Accueil: React.FC = () => {
         <div className="container1">
           <div className="row">
             {/* Image à gauche */}
-            <div className="col-md-6 prp">
+            <div className="col-sm-6 prp">
               <img src="/images/profile.webp" alt="profile pic" className="img-fluid rounded" />
             </div>
 
             {/* Texte à droite */}
-            <div className="col-md-6 pdm">
+            <div className="col-sm-6 pdm">
               <h2>À propos de moi</h2>
               <p>Bonjour, je m'appelle Myriam Bonnaire, j'ai 21 ans et je suis actuellement en Licence d'Économie et Social à l'université de Bourges. <br />
                  Je suis originaire de Nevers, une petite ville située dans la région Bourgogne-Franche-Comté, où j'ai grandi.</p>
 
               <h3>Mes Compétences</h3>
               {[ 
-                { skill: "HTML/CSS", value: 90 },
-                { skill: "JavaScript", value: 80 },
-                { skill: "React", value: 85 },
-                { skill: "Bootstrap", value: 75 },
-                { skill: "TypeScript", value: 70 },
+                { skill: "comptabilité", value: 90 },
+                { skill: "analyse documentaire", value: 80 },
+                { skill: "recherche et devellopement", value: 65 },
+                { skill: "travaux d'administartion", value: 75 },
+                { skill: "colaboration", value: 40 },
               ].map(({ skill, value }, index) => (
                 <div key={index} className="mb-3">
-                  <label>{skill}</label>
-                  <ProgressBar animated now={value} variant="danger" label={`${value}%`} aria-label={`${skill} Progress`} />
+                  <label className="small-text">{skill}</label>
+                  <ProgressBar animated now={value} variant="danger" label={`${value}%`} aria-label={`${skill} Progress`} className="small-progress"/>
                 </div>
               ))}
             </div>
