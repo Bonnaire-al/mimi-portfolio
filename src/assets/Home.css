@@ -1,14 +1,16 @@
 .carousel {
     width: 70%;
     margin-left: 15%;
-    margin-right: 15%; /* Si tu veux un peu d'espace en bas, ajuste cette valeur */
+    margin-right: 15%;
+     /* Si tu veux un peu d'espace en bas, ajuste cette valeur */
   }
 /* Applique un fond à chaque slide */
 .carousel-item {
     position: relative;
     background-size: cover;  /* L'image prend toute la taille de la slide */
     background-position: center; /* L'image est centrée */
-    height: 30rem; /* Hauteur minimum de la slide, ajuste selon ton besoin */
+    height: 30rem; 
+    padding-top: 5%;/* Hauteur minimum de la slide, ajuste selon ton besoin */
     
   }
   
@@ -85,7 +87,7 @@
 }
 
 .apropos{
-  background-color: aliceblue;
+  
   height: 100%;
   width: 70%;
     margin-left: 15%;
@@ -93,16 +95,37 @@
     
 }
 .prp{
- padding-left: 5%;
- background: white;
-    
-}
+  height: 30rem;
+ background-color: white;
+ border-radius: 10px; /* Coins arrondis (facultatif) */
+ box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Ombre */
+ padding: 20px;
+ border: 2px solid #ccc;
+    }
 
 .pdm{
     padding-top: 2.5%;
   padding-left: 5%;
+  height: 30rem;
+  background-color: white;
+  border-radius: 10px; /* Coins arrondis (facultatif) */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Ombre */
+ 
+  border: 2px solid #ccc;
 }
  
+.par{
+  font-size: 0.8rem;
+}
+
+h2{
+  font-size: 1.2rem;
+  background-color: rgb(0, 0, 0);
+}
+h3{
+  font-size: 1.2rem;
+  background-color: rgb(219, 107, 107);
+}
 img {
   width: 80%;
   height: 80%;
@@ -119,26 +142,51 @@ img {
 .container1{
   padding: 5%;
   background: linear-gradient(90deg,  
-  #000000 0%,  
-  #550000 10%,  
-  #771111 20%,  
-  #993333 30%,  
-  #BB5555 40%,  
-  #DD7777 50%,  
-  #FFFFFF 65%);  
+    #000000 0%,  
+    #550000 15%,  
+    #771111 30%,  
+    #FFFFFF 50%,  
+    #771111 70%,  
+    #550000 85%,  
+    #000000 100%  
+  );  
 }
+.small-progress {
+  height: 5px; /* Ajuste la hauteur selon ton besoin */
+  font-size: 7px; 
+  margin-bottom: 5px;/* Réduit la taille du texte à l'intérieur */
+}
+.small-text {
+  font-size: 10px; /* Réduit la taille du texte */
+  margin-bottom: -2px; /* Réduit l’espace sous le texte */
+  display: block; /* Force le texte à être sur sa propre ligne */
+}
+
 
 .progress-c{
   background-color: #550000 !important;
 }
 
 @media (max-width: 576px) {
-  h2 ,h3 {
-    font-size: 1rem !important;
+  img {
+    width: 60%;
+    height: 60%;
+    object-fit: cover; 
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+  h2  {
+    font-size: 1.2rem !important;
    
   }
   h1{
     font-size: 1.5rem !important;
+   }
+   h3{
+    font-size: 0.8rem;
+   }
+   .par{
+    font-size: 0.6rem !important;
    }
   p {
     font-size: 0.7rem !important;
@@ -153,52 +201,60 @@ img {
     margin-left: 0;
 /* Si tu veux un peu d'espace en bas, ajuste cette valeur */
   }
-  .pdm{
+  .pdm {
     background-color: #ffffff;
+    
   }
-  .home{
-    background: linear-gradient(90deg,  
-    #000000 0%,  
-    #550000 10%,  
-    #771111 20%,  
-    #993333 30%,  
-    #BB5555 40%,  
-    #DD7777 50%,  
-    #FFFFFF 65%);
-  }
+ 
+  
   .small-progress {
     height: 5px; /* Ajuste la hauteur selon ton besoin */
     font-size: 7px; 
-    margin-bottom: 5px;/* Réduit la taille du texte à l'intérieur */
+    margin-bottom: 2px;/* Réduit la taille du texte à l'intérieur */
   }
   .small-text {
     font-size: 10px; /* Réduit la taille du texte */
-    margin-bottom: -2px; /* Réduit l’espace sous le texte */
+    margin-bottom: -3px; /* Réduit l’espace sous le texte */
     display: block; /* Force le texte à être sur sa propre ligne */
   }
-
+  .pdm , .prp {
+    height: 20rem;
+    
+     
+   }
 }
 
 @media (min-width: 576px) and (max-width: 768px)  {
+  .pdm , .prp {
+   height: 20rem;
+    
+  }
 
-  h2 ,h3 {
-    font-size: 1.3rem !important;
+  h2  {
+    font-size: 1.2rem !important;
   }
   h1{
     font-size: 1.8rem !important;
    }
+   h3 {
+    font-size: 0.8rem;
+   }
+   .par{
+    font-size: 0.5rem !important;
+   }
   p {
-    font-size: 0.6rem !important;
+    font-size: 0.8rem !important;
   }
   .carousel-item {
-    padding-top: 7%;
+    padding-top: 5%;
     height: 18rem;
     
   }
  .carousel{
     width:100% ;
     margin-left: 0;
-/* Si tu veux un peu d'espace en bas, ajuste cette valeur */
+    
+    
   }
   .small-progress {
     height: 5px; /* Ajuste la hauteur selon ton besoin */
@@ -216,4 +272,8 @@ img {
     object-fit: cover; 
     margin-top: 40%;
   }
+  .container1{
+        background: transparent !important;
+  }
+
 }
