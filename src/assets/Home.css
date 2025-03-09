@@ -141,15 +141,7 @@ img {
 
 .container1{
   padding: 5%;
-  background: linear-gradient(90deg,  
-    #000000 0%,  
-    #550000 15%,  
-    #771111 30%,  
-    #FFFFFF 50%,  
-    #771111 70%,  
-    #550000 85%,  
-    #000000 100%  
-  );  
+  background: transparent;  
 }
 .small-progress {
   height: 5px; /* Ajuste la hauteur selon ton besoin */
@@ -272,8 +264,8 @@ img {
     object-fit: cover; 
     margin-top: 40%;
   }
-  .container1{
-        background: transparent !important;
+
+ 
+
   }
 
-}

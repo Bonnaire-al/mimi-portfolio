@@ -102,8 +102,8 @@ const ExperienceItem: React.FC<{ exp: typeof experiences[0] }> = ({ exp }) => {
     >
       <div className="timeline-date">{exp.date}</div>
       <div className="timeline-content">
-        <h3>{exp.title}</h3>
-        <h4>{exp.company}</h4>
+        <h3 className="title-ex">{exp.title}</h3>
+        <h4 className="title-ex2">{exp.company}</h4>
         <p>{exp.description}</p>
       </div>
     </div>

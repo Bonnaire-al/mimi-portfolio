@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
             <div className="burger-line"></div>
           </div>
           {/* Titre à côté du menu burger sur les petits écrans */}
-          <div className="navbar-mobile-title">Welcome to My Portfolio</div>
+          <div className="navbar-mobile-title">BONNAIRE MYRIAME PORTFOLIO </div>
         </div>
       </div>
     </nav>

@@ -13,5 +13,12 @@ background-clip: text;
 color: transparent;
 }
 body {
-  background-color:rgb(7, 7, 7);
+  background: linear-gradient(90deg,  
+  #000000 0%,  
+  #550000 15%,  
+  #771111 30%,  
+  #FFFFFF 50%,  
+  #771111 70%,  
+  #550000 85%,  
+  #000000 100%  )
 }
